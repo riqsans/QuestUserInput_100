@@ -78,16 +78,17 @@ fun FormDataDiri(modifier: Modifier) {
                     Text(item)
                 }
             }
-            OutlinedTextField(
-                value = textAlamat,
-                singleLine = true,
-                modifier = Modifier.width(250.dp),
-                label = { Text(text = " Alamat lengkap") },
-                onValueChange = {
-                    textAlamat = it
-                }
-            )
+
         }
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = { Text(text = " Alamat lengkap") },
+            onValueChange = {
+                textAlamat = it
+            }
+        )
         Divider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
